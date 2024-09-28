@@ -1,10 +1,41 @@
-<html>
-    <head>
-        <title>LAROIBA SYIFAUTTAMAM</title>
-    </head>
-    <body>
-        <h3>Laroiba Syifauttamam</h3>
-        <p>1202220303</p>
-        <i>SI4604 - </i><B><u>S1 Sistem Informasi</u></B>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="border.css">
+</head>
+<body>
+    <div class="container">
+        <div id="card">
+            <div id="img">
+                <img src="ganteng.jpg">
+            </div>
+
+            <div id="nama">
+                <h1>Laroiba Syifauttamam</h1>
+                <h4>1202220303</h4>
+                <h4></h4><i>SI4604</i> <b><u>S1 Sistem Informasi</u></b></h4>
+            </div>
+        
+            <div id="sosmed">
+                <a href="https://www.instagram.com/laroibasyifauttamam?igsh=aXQ3YWg3cHl4MHB1r">Instagram</a>
+                <a href="https://www.tiktok.com/@zynstar7?_t=8q5urbamoC5&_r=1">Tiktok</a>
+                <a href="https://www.youtube.com/@laroibas">Youtube</a>
+            </div>
+            <div id="waktu"></div>
+        </div>
+    </div>
+
+    <script>
+        function hari() {
+        let today = new Date().toISOString().slice(0, 10);
+        return today;
+    }
+
+    document.getElementById("waktu").innerHTML = hari();
+    </script>
+
+</body>
 </html>
